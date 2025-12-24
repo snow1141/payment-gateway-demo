@@ -82,28 +82,6 @@ const PaymentGateway = () => {
             </div>
           </div>
 
-          {/* PIX Key */}
-          <div className="mb-6">
-            <label className="text-sm text-muted-foreground block mb-2">Chave PIX</label>
-            <div className="flex items-center gap-2 bg-muted/50 border border-border rounded-lg p-3">
-              <code className="flex-1 text-sm text-foreground font-mono truncate">
-                {PIX_KEY}
-              </code>
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={handleCopy}
-                disabled={expired}
-                className="shrink-0"
-              >
-                {copied ? (
-                  <Check className="w-4 h-4 text-success" />
-                ) : (
-                  <Copy className="w-4 h-4" />
-                )}
-              </Button>
-            </div>
-          </div>
 
           {/* Actions */}
           {expired ? (
